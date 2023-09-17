@@ -17,27 +17,29 @@ function Upload(props) {
 let myStyle = {
   width: "100vh",
   position: "center",
-  border: '1px solid #ccc',
+}
+let stl = {
+  color : 'white',
 }
   return (
     <div>
-        <h1 className="my-5">Analyze your Plant here</h1>
+        <h1 className="my-5" style={stl} >Analyze your Plant here</h1>
             <div className="mb-3">
-                    <label htmlFor="exampleFormControlTextarea1" className="form-label">Name of Plant</label>
+                    <label htmlFor="exampleFormControlTextarea1" className="form-label" style={stl}>Name of Plant</label>
                     <input className="form-control" type="text" placeholder="" aria-label="default input example"/>
             </div>
             <div className="mb-3">
-              <label htmlFor="exampleFormControlTextarea1" className="form-label">Describe your problem</label>
+              <label htmlFor="exampleFormControlTextarea1" className="form-label" style={stl}>Describe your problem</label>
               <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
             <div>
-              <p>Upload Image</p>
+              <p style={stl}>Upload Image</p>
               <input className="form-control" type="file" onChange={handleChange} />
-              <div class="text-center">
+              <div className="text-center">
               <img  style={myStyle} className='my-5' src={file} />
               </div>
             </div>
-            <button type="submit" onClick={passAlert} className="my-3 btn btn-success">Analyze</button>
+            <button type="submit" onClick={passAlert} className="my-3 btn btn-success text-center">Analyze</button>
     </div>
   )
 }

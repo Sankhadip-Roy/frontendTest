@@ -15,17 +15,17 @@ export default function Nav() {
               <li className="nav-item">
                 <Link className="nav-link active" aria-current="page" to="/about">About</Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/upload">Analyze Plant</Link>
-              </li>
+              {/* <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to="/">Analyze Plant</Link>
+              </li> */}
               <li className="nav-item">
                 <Link className="nav-link" to="/login">Log in/Sign up</Link>
               </li>
             </ul>
-            <form className="d-flex" role="search" >
+            {/* <form className="d-flex" role="search" >
               <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" style={{color: "black", backgroundColor : "white"}}/>
               <button className="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            </form> */}
           </div>
         </div>
       </nav>
